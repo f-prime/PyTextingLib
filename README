@@ -1,0 +1,12 @@
+Usage:
+
+import pytexting
+
+gmail_username = 'email@gmail.com'
+gmail_password = 'password'
+number = '5555555555'
+message = 'Hey! This message was sent using the PyTexting module!'
+carrier = 'Verizon'
+
+obj = pytexting.pytexting(gmail_username, gmail_password)
+obj.send(number, message, carrier)
