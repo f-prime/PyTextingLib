@@ -18,5 +18,5 @@ class pytexting:
 
   def send(self, phone_num, message, carrier):
     phone_num = phone_num + self.carriers[carrier]
-    message = (" \r\n\r\n From: %s\r\n To: %s\r\n\r\n  %s" % (self.email, "" .join(phone_num), "" .join(message)))
+    message = (" \r\n From: %s\r\n To: %s\r\n\r\n  %s" % (self.email, "" .join(phone_num), "" .join(message)))
     self.smtp.sendmail(self.email, phone_num, message)
